@@ -1,6 +1,6 @@
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import LogoSVG from "../Logo/LogoSVG";
+import LogoSVG from "../utils/logo/LogoSVG";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
@@ -51,7 +51,6 @@ const NavbarElement = (props) => {
         <NavbarElementLogo to={props.navbarLink.path}>
           <LogoSVG
             color={themeContext.fontColor}
-            backgroundColor={themeContext.background}
             width={themeContext.logoSize}
           />
         </NavbarElementLogo>

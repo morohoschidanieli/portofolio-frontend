@@ -7,10 +7,9 @@ const LogoSVG = (props) => {
       y="0px"
       width={props.width}
       viewBox="0 0 502 270"
-      enable-background=""
     >
       <path
-        fill={props.backgroundColor}
+        fill="transparent"
         opacity="1.000000"
         stroke="none"
         d="
@@ -292,7 +291,7 @@ M301.987427,243.428253
 z"
       />
       <path
-        fill={props.backgroundColor}
+        fill="transparent"
         opacity="1.000000"
         stroke="none"
         d="

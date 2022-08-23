@@ -1,5 +1,5 @@
 import NavbarElement from "./NavbarElement";
-import NavbarLayout from "../Layouts/NavbarLayout";
+import NavbarLayout from "../layouts/NavbarLayout";
 
 const NavbarLinks = [
   { title: "home", path: "/", type: "link" },

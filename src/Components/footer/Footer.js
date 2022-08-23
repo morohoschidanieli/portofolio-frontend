@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import footerText from "../../text/footer-text";
-import FooterLayout from "../Layouts/FooterLayout";
+import FooterLayout from "../layouts/FooterLayout";
 
 const CreatedByContainer = styled.div`
   grid-row: 1/2;

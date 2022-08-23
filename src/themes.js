@@ -1,15 +1,16 @@
 const base = {
-  breakpoints: { lg: "900px", md: "769px", sm: "481px", xs: "320px" },
+  breakpoints: { lg: "899.5px", md: "768.5px", sm: "480.5px", xs: "319.5px" },
   fonts: { Roboto: "Roboto,Helvetica,sans-serif" },
   fontSizes: {
     main: "1rem",
     footer: "0.8rem",
-    h1: "2em",
-    h2: "1.5em",
+    h1: { lg: "3rem", md: "2rem" },
+    h2: { lg: "2rem", md: "1.25rem" },
     homeEmoji: "1.7rem",
     contact: "2.5rem",
   },
   logoSize: "100px",
+  backgroundColorTransition: "background-color .3s",
 };
 
 const light = {
@@ -24,6 +25,7 @@ const light = {
   )`,
   footerFontWeight: "600",
   navbarFontWeight: "500",
+  changeThemeIcon: "🌑",
 };
 
 const dark = {
@@ -38,6 +40,7 @@ const dark = {
   )`,
   footerFontWeight: "600",
   navbarFontWeight: "500",
+  changeThemeIcon: "🌕",
 };
 
 module.exports = { base, light, dark };

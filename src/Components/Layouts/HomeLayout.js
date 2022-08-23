@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
-const HomeLayoutComponent = styled.main`
+const HomeLayoutComponent = styled.main(
+  ({ theme }) => `
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-`;
+
+  @media screen and (max-width: ${theme.breakpoints.lg}) and (min-width: ${theme.breakpoints.md}) {
+    
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.lg}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`
+);
 
 const HomeLayout = (props) => {
   return <HomeLayoutComponent>{props.children}</HomeLayoutComponent>;

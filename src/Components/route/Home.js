@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import HomeLayout from "../Layouts/HomeLayout";
-import H1 from "../Headings/H1";
-import H2 from "../Headings/H2";
+import HomeLayout from "../layouts/HomeLayout";
+import H1 from "../headings/H1";
+import H2 from "../headings/H2";
 import ReactSelfPhoto from "../../assets/images/selfphoto1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
@@ -21,22 +21,40 @@ const ImageContainer = styled.div(
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
   margin-top: -100px;
+
+  @media screen and (max-width: ${theme.breakpoints.lg}){
+    margin-top: 0;
+    width: 35vh;
+    height: 35vh;
+  }
 `
 );
 
-const InfoContainer = styled.div`
+const InfoContainer = styled.div(
+  ({ theme }) => `
   margin-top: -100px;
   text-align: left;
-  width: 100%;
-`;
+  
+  @media screen and (max-width: ${theme.breakpoints.lg}) {
+    margin-top: 0;
+  }
+`
+);
 
-const Image = styled.img`
+const Image = styled.img(
+  ({ theme }) => `
   height: auto;
   width: 340px;
   height: 340px;
   border-radius: 50%;
   object-fit: fill;
-`;
+
+  @media screen and (max-width: ${theme.breakpoints.lg}) {
+    width: 33vh;
+    height: 33vh;
+  }
+`
+);
 
 const GradientName = styled.span(
   ({ theme }) => `
@@ -103,6 +121,11 @@ const ContactContainer = styled.div(
 const ContactLink = styled.a(
   ({ theme }) => `
   color: ${theme.fontColor};
+  transition: color .2s;
+
+  &:hover{
+    color: ${theme.fontHoverColor};
+  }
 `
 );
 

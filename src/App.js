@@ -1,13 +1,13 @@
 import { ThemeProvider } from "styled-components";
-import AppLayout from "./Components/Layouts/AppLayout";
+import AppLayout from "./components/layouts/AppLayout";
 import { base, dark, light } from "./themes";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./Components/RouteComponent/Home";
-import AboutMe from "./Components/RouteComponent/AboutMe";
-import Experience from "./Components/RouteComponent/Experience";
-import Portofolio from "./Components/RouteComponent/Portofolio";
-import Navbar from "./Components/NavbarComponents/Navbar";
-import Footer from "./Components/FooterComponent/Footer";
+import Home from "./components/route/Home";
+import AboutMe from "./components/route/AboutMe";
+import Experience from "./components/route/Experience";
+import Portofolio from "./components/route/Portofolio";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 import { useState } from "react";
 
 const themesMap = {
@@ -16,12 +16,26 @@ const themesMap = {
 };
 
 const App = () => {
-  const [currentTheme, setCurrentTheme] = useState("light");
-  const theme = { ...base, ...themesMap[currentTheme] };
+  const [currentTheme, setCurrentTheme] = useState(
+    localStorage.getItem("theme") === null
+      ? "light"
+      : localStorage.getItem("theme")
+  );
+  localStorage.setItem("theme", currentTheme);
+
+  const theme = {
+    ...base,
+    ...themesMap[currentTheme],
+  };
+
+  const selectThemeHandler = (event) => {
+    if (currentTheme === "light") setCurrentTheme("dark");
+    else setCurrentTheme("light");
+  };
 
   return (
     <ThemeProvider theme={theme}>
-      <AppLayout>
+      <AppLayout onSelectTheme={selectThemeHandler}>
         <BrowserRouter>
           <Navbar />
           <Routes>
