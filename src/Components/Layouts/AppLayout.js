@@ -5,7 +5,6 @@ import { ThemeContext } from "styled-components";
 const BaseLayout = styled.div(
   ({ theme }) => `
     background-color: ${theme.background};
-    width: 100vw;
     height: 100vh;
     text-align: center;
     -webkit-transition:${theme.backgroundColorTransition};
@@ -31,16 +30,27 @@ const LayoutGrid = styled.div(
     -webkit-transition:${theme.backgroundColorTransition};
     -ms-transition:${theme.backgroundColorTransition};
     transition:${theme.backgroundColorTransition};
+
+    @media screen and (max-width: ${theme.breakpoints.lg})  {
+      grid-template-rows: 60px 1fr 100px;
+    }
   `
 );
 
-const ChangeTheme = styled.div`
+const ChangeTheme = styled.div(
+  ({ theme }) => `
   position: absolute;
   right: 0;
   padding: 10px;
   cursor: pointer;
   z-index: 111;
-`;
+
+  @media screen and (max-width: ${theme.breakpoints.lg})  {
+    right:auto;
+    left:7px;
+  }
+`
+);
 
 const AppLayout = (props) => {
   const themeContext = useContext(ThemeContext);

@@ -1,13 +1,13 @@
 import { ThemeProvider } from "styled-components";
-import AppLayout from "./components/layouts/AppLayout";
+import AppLayout from "./components/Layouts/AppLayout";
 import { base, dark, light } from "./themes";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./components/route/Home";
-import AboutMe from "./components/route/AboutMe";
-import Experience from "./components/route/Experience";
-import Portofolio from "./components/route/Portofolio";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import Home from "./components/Route/Home";
+import AboutMe from "./components/Route/AboutMe";
+import Experience from "./components/Route/Experience";
+import Portofolio from "./components/Route/Portofolio";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 const themesMap = {

@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import HomeLayout from "../layouts/HomeLayout";
-import H1 from "../headings/H1";
-import H2 from "../headings/H2";
+import HomeLayout from "../Layouts/HomeLayout";
+import H1 from "../Headings/H1";
+import H2 from "../Headings/H2";
 import ReactSelfPhoto from "../../assets/images/selfphoto1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
@@ -19,7 +19,7 @@ const ImageContainer = styled.div(
   height: 370px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
+  box-shadow: ${theme.boxShadow};
   margin-top: -100px;
 
   @media screen and (max-width: ${theme.breakpoints.lg}){
