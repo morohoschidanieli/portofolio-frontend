@@ -1,8 +1,15 @@
 body {
   margin: 0;
   /* font-family: Roboto,Helvetica,sans-serif !important; */
+  height:100%;
+  overflow: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  height:100%;
+  overflow: auto;
 }
 
 code {

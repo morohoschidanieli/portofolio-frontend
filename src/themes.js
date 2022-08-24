@@ -1,6 +1,9 @@
 const base = {
   breakpoints: { lg: "899.5px", md: "768.5px", sm: "480.5px", xs: "319.5px" },
-  fonts: { Roboto: "Roboto,Helvetica,sans-serif" },
+  fonts: {
+    Roboto: "Roboto,Helvetica,sans-serif",
+    Courier: "'Courier New', Courier, monospace",
+  },
   fontSizes: {
     main: "1rem",
     footer: "0.8rem",
@@ -10,10 +13,43 @@ const base = {
     contact: "2.5rem",
     console: "24px",
   },
+  padding: {
+    console: {
+      top: "32px",
+      bottom: "32px",
+      right: "48px",
+      left: "48px",
+    },
+  },
+  boxShadow: "0 0.5rem 1rem rgb(0 0 0 / 40%)",
   logoSize: "100px",
   navbarIconsSize: "30px",
   navbarHeightOnMobile: "58px",
   backgroundColorTransition: "background-color .3s",
+  console: {
+    window: {
+      background: "#27252F",
+      borderRadius: "0px 0px 0.5rem 0.5rem",
+      fontPathColor: "#00ffa4",
+      fontPathColorMain: "#27c93f",
+      fontCommandColor: "#f8f8f8",
+      padding: "2rem 3rem",
+      iconSize: "24px",
+    },
+    navbar: {
+      background: "#8c8c8c",
+      borderRadius: "0.5rem 0.5rem 0px 0px",
+      padding: "8px",
+    },
+    button: {
+      height: "14px",
+      marginLeft: "8px",
+      closeButtonColor: "#ff6057",
+      minimizeButtonColor: "#ffbd2e",
+      fullScreenButtonColor: "#27c93f",
+    },
+    marginBottom: "64px",
+  },
 };
 
 const light = {
@@ -26,7 +62,7 @@ const light = {
     rgb(0, 255, 164),
     rgb(166, 104, 255)
   )`,
-  boxShadow: "0 0.5rem 1rem rgb(0 0 0 / 40%)",
+
   footerFontWeight: "600",
   navbarFontWeight: "500",
   changeThemeIcon: "🌑",
@@ -42,24 +78,9 @@ const dark = {
     rgb(0, 255, 164),
     rgb(166, 104, 255)
   )`,
-  padding: {
-    console: {
-      top: "32px",
-      bottom: "32px",
-      right: "48px",
-      left: "48px",
-    },
-  },
   footerFontWeight: "600",
   navbarFontWeight: "500",
   changeThemeIcon: "🌕",
-  consoleBackground: "#27252F",
-  consoleBarBackground: "#8c8c8c",
-  consoleCloseButtonColor: "#ff6057",
-  consoleMinimizeButtonColor: "#ffbd2e",
-  consoleFullScreenButtonColor: "#27c93f",
-  consolePathColor: "#00ffa4",
-  consoleCommnadColor: "#f8f8f8",
 };
 
 module.exports = { base, light, dark };
