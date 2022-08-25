@@ -5,7 +5,7 @@ import { ThemeContext } from "styled-components";
 const BaseLayout = styled.div(
   ({ theme }) => `
     background-color: ${theme.background};
-    height: 100vh;
+    height: 100%;
     text-align: center;
     -webkit-transition:${theme.backgroundColorTransition};
     -ms-transition:${theme.backgroundColorTransition};
@@ -24,7 +24,7 @@ const LayoutGrid = styled.div(
     margin-right: auto;
     min-height: 100vh;
     text-align: center;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 100px auto 100px;
     background-color: ${theme.background};
     max-width: ${theme.breakpoints.lg};
     -webkit-transition:${theme.backgroundColorTransition};

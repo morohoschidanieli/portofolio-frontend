@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "./Terminal.css";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import macOSDirectoryIcon from "../../assets/images/macos-directory.png";
@@ -52,12 +53,16 @@ const WindowIcon = styled.img(
     `
 );
 
-const Path = styled.p(
+const Path = styled.span(
   ({ theme }) => `
     font-size: ${theme.fontSizes.console};
     color:${theme.console.window.fontPathColor};
     `
 );
+
+const Row = styled.div`
+  margin: 16px 0;
+`;
 
 const Main = styled.span(
   ({ theme }) => `
@@ -66,11 +71,31 @@ const Main = styled.span(
     `
 );
 
-const Command = styled.span(
+const InlineCommand = styled.span(
   ({ theme }) => `
     font-size: ${theme.fontSizes.console};
     color:${theme.console.window.fontCommandColor};
     `
+);
+
+const ColumnCommand = styled.p(
+  ({ theme }) => `
+      font-size: ${theme.fontSizes.console};
+      color:${theme.console.window.fontCommandColor};
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: ${theme.breakpoints.md})  {
+        grid-template-columns: 1fr;
+      }
+      `
+);
+
+const ListCommand = styled.div(
+  ({ theme }) => `
+      font-size: ${theme.fontSizes.console};
+      color:${theme.console.window.fontCommandColor};
+      `
 );
 
 const Button = styled.div(
@@ -101,10 +126,35 @@ const Console = (props) => {
       <Window>
         {props.windowData.data.map((data, index) => {
           return (
-            <Path key={index}>
-              {data.path} {data.isMain ? <Main>(main) $ </Main> : "$ "}
-              <Command>{data.command}</Command>
-            </Path>
+            <Row key={index}>
+              <Path key={index}>
+                {data.path} {data.isMain ? <Main>(main)</Main> : ""}{" "}
+                {data.useDollarSign ? <span> $ </span> : ""}
+              </Path>
+              {data.commandType === "inline" ? (
+                <InlineCommand>
+                  {data.command.map((command, index) => (
+                    <span key={index}>{command}</span>
+                  ))}
+                </InlineCommand>
+              ) : data.commandType === "column" ? (
+                <ColumnCommand>
+                  {data.command.map((command, index) => (
+                    <span className="command-line-row" key={index}>
+                      {command}
+                    </span>
+                  ))}
+                </ColumnCommand>
+              ) : (
+                <ListCommand>
+                  {data.command.map((command, index) => (
+                    <div className="command-line-row" key={index}>
+                      {command}
+                    </div>
+                  ))}
+                </ListCommand>
+              )}
+            </Row>
           );
         })}
       </Window>

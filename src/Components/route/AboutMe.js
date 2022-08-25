@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import Console from "../Console/Console";
+import Console from "../Terminal/Terminal";
 import AboutLayout from "../Layouts/AboutLayout";
 
 const AboutMe = () => {
@@ -9,14 +8,20 @@ const AboutMe = () => {
       data: [
         {
           path: "daniel",
-          command: "cat aboutdaniel",
+          useDollarSign: true,
+          command: ["cat aboutme"],
+          commandType: "inline",
           isMain: false,
         },
         {
-          path: "daniel/aboutdaniel",
-          command:
-            "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+          path: "daniel/aboutme",
+          useDollarSign: true,
+          command: [
+            "Hello! I'm Daniel. I'm a frontend developer for Endava. I studied Electronics, Telecommunications and Information Technology at Technical University of Cluj-Napoca. I am a person open to learn and improve my professional skills. I believe that every opportunity is welcome and an additional 'brick' in creating my future. Every day I try to become better than yesterday and I consider that my skills are ready to be tested and improved.",
+          ],
+          commandType: "inline",
           isMain: true,
+          useColumns: false,
         },
       ],
     },
@@ -25,13 +30,47 @@ const AboutMe = () => {
       data: [
         {
           path: "daniel",
-          command: "cd skills",
+          useDollarSign: true,
+          command: ["cd skills"],
+          commandType: "inline",
           isMain: false,
         },
         {
           path: "daniel/skills",
-          command: "ls",
+          useDollarSign: true,
+          command: ["ls"],
+          commandType: "inline",
           isMain: true,
+        },
+        {
+          path: "Proficient With",
+          useDollarSign: false,
+          command: [
+            "javascript",
+            "react js",
+            "html5",
+            "css3",
+            "git",
+            "sass",
+            "bootstrap",
+            "material ui",
+            "jquery",
+            "angular",
+            "java",
+            "mysql",
+            "javaserver pages",
+            "figma",
+            "firebase",
+          ],
+          commandType: "column",
+          isMain: false,
+        },
+        {
+          path: "Exposed To",
+          useDollarSign: false,
+          command: ["vue", "angular", "nodejs", "python"],
+          commandType: "column",
+          isMain: false,
         },
       ],
     },
@@ -40,13 +79,31 @@ const AboutMe = () => {
       data: [
         {
           path: "daniel",
-          command: "cd hobbies",
+          useDollarSign: true,
+          command: ["cd hobbies"],
+          commandType: "inline",
           isMain: false,
         },
         {
           path: "daniel/hobbies",
-          command: "ls",
+          useDollarSign: true,
+          command: ["ls"],
+          commandType: "inline",
           isMain: true,
+        },
+        {
+          path: "",
+          useDollarSign: false,
+          command: [
+            "🏋️‍♀️ sport",
+            "⚽️ football",
+            "🎸 guitar",
+            "✈️ traveling",
+            "🕹 gaming",
+            "🎥 movies",
+          ],
+          commandType: "list",
+          isMain: false,
         },
       ],
     },

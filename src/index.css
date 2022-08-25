@@ -2,10 +2,13 @@ body {
   margin: 0;
   /* font-family: Roboto,Helvetica,sans-serif !important; */
   height:100%;
+  position: relative;
   overflow: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   -moz-osx-font-smoothing: grayscale;
 }
+html, body, #root, #root>div {  height: 100%}
+
 
 html{
   height:100%;
