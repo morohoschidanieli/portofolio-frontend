@@ -37,7 +37,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <AppLayout onSelectTheme={selectThemeHandler}>
-        <HashRouter>
+        <BrowserRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -46,7 +46,7 @@ const App = () => {
             <Route path="/portofolio" element={<Portofolio />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
         <Footer />
       </AppLayout>
     </ThemeProvider>
