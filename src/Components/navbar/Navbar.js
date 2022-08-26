@@ -74,7 +74,7 @@ const Navbar = () => {
   };
 
   return (
-    <NavbarComponent>
+    <NavbarComponent onTouchMove={hideNavbar} onWheel={hideNavbar}>
       <NavbarLayout showNavbar={showNavbar} clickHandler={toggleNavbar}>
         {NavbarLinks.map((navbarElement, index) => {
           return (
