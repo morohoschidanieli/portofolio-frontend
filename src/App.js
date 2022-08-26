@@ -9,6 +9,7 @@ import Portofolio from "./components/Route/Portofolio";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
+import { HashRouter } from "react-router-dom";
 
 const themesMap = {
   light,
@@ -36,7 +37,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <AppLayout onSelectTheme={selectThemeHandler}>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -45,7 +46,7 @@ const App = () => {
             <Route path="/portofolio" element={<Portofolio />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         <Footer />
       </AppLayout>
     </ThemeProvider>
