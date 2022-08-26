@@ -8,7 +8,8 @@ import GuessMyNumberMockup from "../../assets/images/projects/guessmynumber-mock
 import RandomNumberGenerator from "../../assets/images/projects/randomnumbergenerator-mockup.png";
 import TicTacToeMockup from "../../assets/images/projects/tictactoe-mockup.png";
 import ToDoMockup from "../../assets/images/projects/todo-mockup.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCompass } from "@fortawesome/free-solid-svg-icons";
 const Project = styled.div`
   width: 100%;
 `;
@@ -16,26 +17,43 @@ const Project = styled.div`
 const MockupProject = styled.img`
   object-fit: contain;
   width: 100%;
-  padding: 10px 10px 30px 10px;
+  padding: 50px 0px;
 `;
 
 const LiveDemo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px;
   border: 2px solid black;
   border-radius: 25px;
-  height: 48px;
+  height: 30px;
   width: 178px;
+  font-size: 18px;
+  left: 0;
+  top: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin: 10px;
 `;
 
-const LiveDemoLink = styled.a`
-  color: #f8f8f8;
+const LiveDemoLink = styled.a(
+  ({ theme }) => `
+  color: ${theme.fontColor};
   transition: color 0.4s;
   text-decoration: none;
 
   &:link {
     text-decoration: none;
   }
-`;
+
+  &:hover{
+    background: ${theme.gradientColor};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`
+);
 
 const Portofolio = () => {
   const projects = [
@@ -78,14 +96,15 @@ const Portofolio = () => {
 
   return (
     <PortofolioLayout>
-      {projects.map((project) => {
+      {projects.map((project, index) => {
         return (
-          <Project>
+          <Project key={index}>
             <MockupProject src={project.image} />
             <H2>{project.title}</H2>
             <LiveDemo>
               <LiveDemoLink target="_blank" href={project.url}>
-                Live Demo
+                <FontAwesomeIcon icon={faCompass} />
+                &nbsp; Live Demo
               </LiveDemoLink>
             </LiveDemo>
           </Project>
