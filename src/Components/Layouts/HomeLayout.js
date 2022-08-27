@@ -6,10 +6,6 @@ const HomeLayoutComponent = styled.main(
   align-items: center;
   justify-items: center;
 
-  @media screen and (max-width: ${theme.breakpoints.lg}) and (min-width: ${theme.breakpoints.md}) {
-    
-  }
-
   @media screen and (min-width: ${theme.breakpoints.lg}) {
     grid-template-columns: repeat(2, 1fr);
   }

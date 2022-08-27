@@ -14,18 +14,18 @@ const ImageContainer = styled.div(
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${theme.gradientColor};
   width: 370px;
   height: 370px;
+  background: ${theme.gradientColor};
   border-radius: 50%;
   overflow: hidden;
   box-shadow: ${theme.boxShadow};
   margin-top: -100px;
 
   @media screen and (max-width: ${theme.breakpoints.lg}){
-    margin-top: 0;
     width: 35vh;
     height: 35vh;
+    margin-top: 0;
   }
 `
 );

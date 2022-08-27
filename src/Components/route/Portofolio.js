@@ -10,6 +10,7 @@ import TicTacToeMockup from "../../assets/images/projects/tictactoe-mockup.png";
 import ToDoMockup from "../../assets/images/projects/todo-mockup.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompass } from "@fortawesome/free-solid-svg-icons";
+
 const Project = styled.div`
   width: 100%;
 `;
@@ -25,6 +26,9 @@ const LiveDemo = styled.div`
   justify-content: center;
   align-items: center;
   padding: 8px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin: 10px;
   border: 2px solid black;
   border-radius: 25px;
   height: 30px;
@@ -32,16 +36,13 @@ const LiveDemo = styled.div`
   font-size: 18px;
   left: 0;
   top: 0;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin: 10px;
 `;
 
 const LiveDemoLink = styled.a(
   ({ theme }) => `
   color: ${theme.fontColor};
-  transition: color 0.4s;
   text-decoration: none;
+  transition: color 0.4s;
 
   &:link {
     text-decoration: none;

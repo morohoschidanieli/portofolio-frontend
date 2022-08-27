@@ -3,12 +3,13 @@ import styled from "styled-components";
 const H2Component = styled.h2(
   ({ theme }) => `
   font-size: ${theme.fontSizes.h2.lg};
-  margin: 4px 0;
   color:${theme.fontColor};
+  margin: 4px 0;
+  
   @media screen and (max-width: ${theme.breakpoints.lg})  {
+    font-size: ${theme.fontSizes.h2.md};
     text-align:center;
     margin-top: 0;
-    font-size: ${theme.fontSizes.h2.md};
   }
 `
 );

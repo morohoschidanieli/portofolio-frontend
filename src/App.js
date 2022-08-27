@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import AppLayout from "./components/Layouts/AppLayout";
 import { base, dark, light } from "./themes";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Route/Home";
 import AboutMe from "./components/Route/AboutMe";
 import Experience from "./components/Route/Experience";

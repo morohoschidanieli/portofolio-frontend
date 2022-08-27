@@ -18,32 +18,32 @@ const Navbar = styled.div(
   ({ theme }) => `
     display:flex;
     grid-row:1/2;
-    background-color:${theme.console.navbar.background};
-    border-radius:${theme.console.navbar.borderRadius};
     padding:${theme.console.navbar.padding};
     align-items:center;
+    background-color:${theme.console.navbar.background};
+    border-radius:${theme.console.navbar.borderRadius};
     `
 );
 
 const Window = styled.div(
   ({ theme }) => `
     background-color:${theme.console.window.background};
-    border-radius:${theme.console.window.borderRadius};
     padding: ${theme.console.window.padding};
     text-align:left;
+    border-radius:${theme.console.window.borderRadius};
     `
 );
 
 const WindowTitle = styled.span(
   ({ theme }) => `
-    position:absolute;
     display:flex;
+    position:absolute;
+    justify-content:center;
+    align-items:center;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    justify-content:center;
-    align-items:center;
     `
 );
 
@@ -80,10 +80,10 @@ const InlineCommand = styled.span(
 
 const ColumnCommand = styled.p(
   ({ theme }) => `
-      font-size: ${theme.fontSizes.console};
-      color:${theme.console.window.fontCommandColor};
       display:grid;
       grid-template-columns: 1fr 1fr;
+      font-size: ${theme.fontSizes.console};
+      color:${theme.console.window.fontCommandColor};
 
       @media screen and (max-width: ${theme.breakpoints.md})  {
         grid-template-columns: 1fr;

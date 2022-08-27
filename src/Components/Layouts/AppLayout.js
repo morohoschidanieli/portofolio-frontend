@@ -4,20 +4,19 @@ import { ThemeContext } from "styled-components";
 
 const BaseLayout = styled.div(
   ({ theme }) => `
-    background-color: ${theme.background};
+    font-family:${theme.fonts.Roboto} !important;
     height: 100%;
     text-align: center;
+    background-color: ${theme.background};
     -webkit-transition:${theme.backgroundColorTransition};
     -ms-transition:${theme.backgroundColorTransition};
     transition:${theme.backgroundColorTransition};
-    font-family:${theme.fonts.Roboto} !important;
   `
 );
 
 const LayoutGrid = styled.div(
   ({ theme }) => `
     display: grid;
-    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;

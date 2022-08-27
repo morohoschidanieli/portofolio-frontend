@@ -6,26 +6,27 @@ import { ThemeContext } from "styled-components";
 
 const NavbarElementItem = styled.li(
   ({ theme, order }) => `
+  order:${order.desktop};
   text-transform: lowercase;
   border-image-slice: 1;
   cursor: pointer;
-  order:${order.desktop};
+  
   @media screen and (max-width: ${theme.breakpoints.lg})  {
-    height:60px;
     display: flex;
     justify-content: center;
     align-items: center;
     order:${order.mobile};
+    height:60px;
   }
 `
 );
 
 const NavbarElementLink = styled(NavLink)(
   ({ theme }) => `
-  text-decoration: none;
-  color: ${theme.fontColor};
   font-weight:${theme.navbarFontWeight};
-
+  color: ${theme.fontColor};
+  text-decoration: none;
+  
   &.active {
     border-image-source: ${theme.gradientColor};
     padding-bottom: 8px;
@@ -34,17 +35,17 @@ const NavbarElementLink = styled(NavLink)(
   }
 
   &:hover {
-    transition: all 0.25s ease;
     color: ${theme.fontHoverColor};
+    transition: all 0.25s ease;
   }
 `
 );
 
 const NavbarElementLogo = styled(NavLink)(
   ({ theme }) => `
-  text-decoration: none;
   color: #1f1f1f;
-
+  text-decoration: none;
+ 
   @media screen and (max-width: ${theme.breakpoints.lg})  {
     display:none;
   }

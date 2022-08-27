@@ -9,6 +9,7 @@ const CreatedByContainer = styled.div`
 const CurrentYearContainer = styled.div`
   grid-row: 2/3;
 `;
+
 const Footer = () => {
   return (
     <FooterLayout>

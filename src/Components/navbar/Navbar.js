@@ -8,12 +8,12 @@ import { useState } from "react";
 const OpenNavbar = styled(FontAwesomeIcon)(
   ({ theme }) => `
   display:none;
+  position: absolute;
   color:${theme.fontColor};
   font-size:${theme.navbarIconsSize};
-  top: 17px;
-  position: absolute;
-  right: 17px;
   cursor:pointer;
+  top: 17px;
+  right: 17px;
 
   @media screen and (max-width: ${theme.breakpoints.lg})  {
     display:block;
@@ -23,8 +23,8 @@ const OpenNavbar = styled(FontAwesomeIcon)(
 const NavbarComponent = styled.nav(
   ({ theme }) => `
   @media screen and (max-width: ${theme.breakpoints.lg})  {
-    height:${theme.navbarHeightOnMobile};
     display:flex;
+    height:${theme.navbarHeightOnMobile}; 
     justify-content:end;
   }`
 );
