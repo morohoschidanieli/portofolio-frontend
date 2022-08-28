@@ -132,7 +132,7 @@ const ContactLink = styled.a(
 const Home = () => {
   const aboutMeList = [
     { emoji: "☕", description: "fueled by coffee" },
-    { emoji: "🌎", description: "based in the RO, Cluj-Napoca" },
+    { emoji: "🌎", description: "based in RO, Cluj-Napoca" },
     { emoji: "💼", description: "Frontend Developer at Endava" },
     { emoji: "📧", description: "morohoschidanieliosif@gmail.com" },
   ];
