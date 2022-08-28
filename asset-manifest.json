@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.5fdccdf2.css",
-    "main.js": "/portofolio/static/js/main.bf02abd5.js",
-    "static/media/resume-mockup.png": "/portofolio/static/media/resume-mockup.6701878618568ed75fb4.png",
-    "static/media/brackjack-mockup.png": "/portofolio/static/media/brackjack-mockup.854aa78b77243e87e212.png",
-    "static/media/guessmynumber-mockup.png": "/portofolio/static/media/guessmynumber-mockup.0b8737defe23e8454f34.png",
-    "static/media/calculator-mockup.png": "/portofolio/static/media/calculator-mockup.7607a0f50c74d7b82ecb.png",
-    "static/media/todo-mockup.png": "/portofolio/static/media/todo-mockup.5e2812749eeb6dc62993.png",
-    "static/media/tictactoe-mockup.png": "/portofolio/static/media/tictactoe-mockup.d07185e92ac54e110fca.png",
-    "static/media/randomnumbergenerator-mockup.png": "/portofolio/static/media/randomnumbergenerator-mockup.8ae8323ea512a97a90bf.png",
-    "static/media/selfphoto1.png": "/portofolio/static/media/selfphoto1.c75c93813f5d8de5b9d0.png",
-    "static/media/macos-directory.png": "/portofolio/static/media/macos-directory.93380a94aac59d4e9b4f.png",
-    "index.html": "/portofolio/index.html",
-    "main.5fdccdf2.css.map": "/portofolio/static/css/main.5fdccdf2.css.map",
-    "main.bf02abd5.js.map": "/portofolio/static/js/main.bf02abd5.js.map"
+    "main.css": "/static/css/main.5fdccdf2.css",
+    "main.js": "/static/js/main.6b0cd993.js",
+    "static/media/resume-mockup.png": "/static/media/resume-mockup.6701878618568ed75fb4.png",
+    "static/media/brackjack-mockup.png": "/static/media/brackjack-mockup.854aa78b77243e87e212.png",
+    "static/media/guessmynumber-mockup.png": "/static/media/guessmynumber-mockup.0b8737defe23e8454f34.png",
+    "static/media/calculator-mockup.png": "/static/media/calculator-mockup.7607a0f50c74d7b82ecb.png",
+    "static/media/todo-mockup.png": "/static/media/todo-mockup.5e2812749eeb6dc62993.png",
+    "static/media/tictactoe-mockup.png": "/static/media/tictactoe-mockup.d07185e92ac54e110fca.png",
+    "static/media/randomnumbergenerator-mockup.png": "/static/media/randomnumbergenerator-mockup.8ae8323ea512a97a90bf.png",
+    "static/media/selfphoto1.png": "/static/media/selfphoto1.c75c93813f5d8de5b9d0.png",
+    "static/media/macos-directory.png": "/static/media/macos-directory.93380a94aac59d4e9b4f.png",
+    "index.html": "/index.html",
+    "main.5fdccdf2.css.map": "/static/css/main.5fdccdf2.css.map",
+    "main.6b0cd993.js.map": "/static/js/main.6b0cd993.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdccdf2.css",
-    "static/js/main.bf02abd5.js"
+    "static/js/main.6b0cd993.js"
   ]
 }
