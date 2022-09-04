@@ -68,7 +68,7 @@ const AboutMe = () => {
         {
           path: "Exposed To",
           useDollarSign: false,
-          command: ["vue", "angular", "nodejs", "python"],
+          command: ["vue", "angular", "nodejs", "mongodb", "python"],
           commandType: "column",
           isMain: false,
         },
