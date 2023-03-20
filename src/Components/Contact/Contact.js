@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 const ContactLayout = styled.div(
   ({ theme }) => ` 
-  
+
     position:fixed;
     height:auto;
     width:400px;
@@ -178,6 +179,7 @@ const initialFormData = {
 
 const Contact = ({ show }) => {
   const [showContactForm, setShowContactForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState({
     message: "",
     show: false,
@@ -191,13 +193,14 @@ const Contact = ({ show }) => {
 
   const submitFormHandler = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     try {
       await axios.post("https://portofolio-server.up.railway.app/mail/send", {
         name: formData.name.value,
         email: formData.email.value,
         content: formData.content.value,
       });
+      setIsLoading(false);
       setError({
         message: "Message sent successfully!",
         show: true,
@@ -253,7 +256,9 @@ const Contact = ({ show }) => {
                     type="text"
                     value={formData.name.value}
                     autoComplete="false"
+                    disabled={isLoading}
                   />
+
                   {formData.name.isValid === undefined ? (
                     ""
                   ) : formData.name.isValid ? (
@@ -272,6 +277,7 @@ const Contact = ({ show }) => {
                     type="email"
                     value={formData.email.value}
                     autoComplete="false"
+                    disabled={isLoading}
                   />
                   {formData.email.isValid === undefined ? (
                     ""
@@ -289,6 +295,7 @@ const Contact = ({ show }) => {
                     placeholder="Your message"
                     name="content"
                     value={formData.content.value}
+                    disabled={isLoading}
                   />
                   {formData.content.phone === undefined ? (
                     ""
@@ -302,10 +309,11 @@ const Contact = ({ show }) => {
                   disabled={
                     formData.content.value.length === 0 ||
                     !formData.email.isValid ||
-                    !formData.name.isValid
+                    !formData.name.isValid ||
+                    isLoading
                   }
                 >
-                  Submit
+                  {isLoading ? <LoadingSpinner /> : "Submit"}
                 </SubmitButton>
                 <br />
                 {error.show ? (
