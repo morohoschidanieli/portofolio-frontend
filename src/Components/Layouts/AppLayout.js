@@ -4,6 +4,7 @@ import { ThemeContext } from "styled-components";
 
 const BaseLayout = styled.div(
   ({ theme }) => `
+    position:relative;
     font-family:${theme.fonts.Roboto} !important;
     height: 100%;
     text-align: center;
