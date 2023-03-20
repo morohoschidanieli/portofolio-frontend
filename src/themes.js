@@ -29,6 +29,7 @@ const base = {
   console: {
     window: {
       background: "#27252F",
+      radius: "0.5rem",
       borderRadius: "0px 0px 0.5rem 0.5rem",
       fontPathColor: "#00ffa4",
       fontPathColorMain: "#27c93f",

@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 import { HashRouter } from "react-router-dom";
+import Contact from "./components/Contact/Contact";
 
 const themesMap = {
   light,
@@ -48,6 +49,7 @@ const App = () => {
           </Routes>
         </HashRouter>
         <Footer />
+        <Contact />
       </AppLayout>
     </ThemeProvider>
   );
