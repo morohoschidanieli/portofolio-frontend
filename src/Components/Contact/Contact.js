@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import axios from "axios";
 
 const ContactLayout = styled.div(
-  ({ theme }) => `
+  ({ theme }) => ` 
+  
     position:fixed;
     height:auto;
     width:400px;
