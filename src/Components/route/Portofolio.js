@@ -8,6 +8,7 @@ import GuessMyNumberMockup from "../../assets/images/projects/guessmynumber-mock
 import RandomNumberGenerator from "../../assets/images/projects/randomnumbergenerator-mockup.png";
 import TicTacToeMockup from "../../assets/images/projects/tictactoe-mockup.png";
 import ToDoMockup from "../../assets/images/projects/todo-mockup.png";
+import LamaSocialMockup from "../../assets/images/projects/Lamasocial-mockup.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompass } from "@fortawesome/free-solid-svg-icons";
 
@@ -59,39 +60,52 @@ const LiveDemoLink = styled.a(
 const Portofolio = () => {
   const projects = [
     {
+      title: "Lama social",
+      image: LamaSocialMockup,
+      url: "https://github.com/aniel88/social-media-app",
+      typeOfUrl: "Github",
+    },
+    {
       title: "Resume",
       image: ResumeMockup,
       url: "https://aniel88.github.io/CV/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "Blackjack Game",
       image: BlackjackMockup,
       url: "https://aniel88.github.io/blackjack-game/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "Calculator in react",
       image: CalculatorMockup,
       url: "https://aniel88.github.io/calculator_react/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "Guess my number game",
       image: GuessMyNumberMockup,
       url: "https://aniel88.github.io/guessMyNumber/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "Random number generator",
       image: RandomNumberGenerator,
       url: "https://aniel88.github.io/random-number/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "Tic Tac Toe game",
       image: TicTacToeMockup,
       url: "https://aniel88.github.io/tictactoegame/",
+      typeOfUrl: "Live Demo",
     },
     {
       title: "To do application",
       image: ToDoMockup,
       url: "https://aniel88.github.io/to-do-list/",
+      typeOfUrl: "Live Demo",
     },
   ];
 
@@ -105,7 +119,7 @@ const Portofolio = () => {
             <LiveDemo>
               <LiveDemoLink target="_blank" href={project.url}>
                 <FontAwesomeIcon icon={faCompass} />
-                &nbsp; Live Demo
+                &nbsp; {project.typeOfUrl}
               </LiveDemoLink>
             </LiveDemo>
           </Project>
