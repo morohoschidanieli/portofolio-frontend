@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import { useClickOutside } from "../../hooks/useClickOutside";
+import { useTouchMoveOutside } from "../../hooks/useTouchMoveOutside";
 
 const ContactLayout = styled.div(
   ({ theme }) => ` 
-
     position:fixed;
     height:auto;
     width:400px;
@@ -177,7 +178,7 @@ const initialFormData = {
   },
 };
 
-const Contact = ({ show }) => {
+const Contact = ({ show, onClickOutside }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState({
@@ -185,17 +186,24 @@ const Contact = ({ show }) => {
     show: false,
     type: "success",
   });
-
   const [formData, setFormData] = useState(initialFormData);
+  const clickRef = useRef();
+  useClickOutside(clickRef, () => hideContactForm());
+  useTouchMoveOutside(clickRef, () => hideContactForm());
+
   const showContactFormHandler = () => {
     setShowContactForm(!showContactForm);
+  };
+
+  const hideContactForm = () => {
+    setShowContactForm(false);
   };
 
   const submitFormHandler = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await axios.post("https://portofolio-server.up.railway.app/mail/send", {
+      await axios.post(process.env.REACT_APP_CONTACT_SERVER_LINK, {
         name: formData.name.value,
         email: formData.email.value,
         content: formData.content.value,
@@ -215,7 +223,7 @@ const Contact = ({ show }) => {
       });
     }
   };
-  console.log(formData);
+
   const onChangeInputHandler = (e) => {
     setFormData((prevData) => {
       return {
@@ -236,7 +244,7 @@ const Contact = ({ show }) => {
   };
 
   return (
-    <ContactLayout title="Contact">
+    <ContactLayout ref={clickRef} title="Contact">
       <ContactWrapper>
         {showContactForm && (
           <motion.div

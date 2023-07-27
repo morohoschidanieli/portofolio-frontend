@@ -49,7 +49,7 @@ const App = () => {
           </Routes>
         </HashRouter>
         <Footer />
-        <Contact />
+        <Contact onClickOutside={() => alert("click outside")} />
       </AppLayout>
     </ThemeProvider>
   );
