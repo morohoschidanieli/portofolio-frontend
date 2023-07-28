@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fdccdf2.css",
-    "main.js": "/static/js/main.6e9abfbf.js",
-    "static/media/resume-mockup.png": "/static/media/resume-mockup.6701878618568ed75fb4.png",
+    "main.js": "/static/js/main.9b3ae9bb.js",
     "static/media/brackjack-mockup.png": "/static/media/brackjack-mockup.854aa78b77243e87e212.png",
     "static/media/guessmynumber-mockup.png": "/static/media/guessmynumber-mockup.0b8737defe23e8454f34.png",
     "static/media/calculator-mockup.png": "/static/media/calculator-mockup.7607a0f50c74d7b82ecb.png",
@@ -11,13 +10,15 @@
     "static/media/Lamasocial-mockup.png": "/static/media/Lamasocial-mockup.afed5f6889573155b014.png",
     "static/media/randomnumbergenerator-mockup.png": "/static/media/randomnumbergenerator-mockup.8ae8323ea512a97a90bf.png",
     "static/media/selfphoto1.png": "/static/media/selfphoto1.c75c93813f5d8de5b9d0.png",
+    "static/media/smart-home-automation-system-mockup.png": "/static/media/smart-home-automation-system-mockup.53d93dbc4f814fc1161c.png",
+    "static/media/portofolio-mockup.png": "/static/media/portofolio-mockup.9aa283ca4c0d5ad5c080.png",
     "static/media/macos-directory.png": "/static/media/macos-directory.93380a94aac59d4e9b4f.png",
     "index.html": "/index.html",
     "main.5fdccdf2.css.map": "/static/css/main.5fdccdf2.css.map",
-    "main.6e9abfbf.js.map": "/static/js/main.6e9abfbf.js.map"
+    "main.9b3ae9bb.js.map": "/static/js/main.9b3ae9bb.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdccdf2.css",
-    "static/js/main.6e9abfbf.js"
+    "static/js/main.9b3ae9bb.js"
   ]
 }
