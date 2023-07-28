@@ -164,11 +164,8 @@ const Home = () => {
           </ContactLink>
           <ContactLink
             target="_blank"
-            href="https://www.instagram.com/moro.danniel/"
+            href="https://github.com/morohoschidanieli"
           >
-            <FontAwesomeIcon icon={faInstagram} />
-          </ContactLink>
-          <ContactLink target="_blank" href="https://github.com/aniel88">
             <FontAwesomeIcon icon={faGithub} />
           </ContactLink>
           <ContactLink
