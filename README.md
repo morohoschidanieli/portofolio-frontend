@@ -1,16 +1,16 @@
-# Personal Portfolio
+# 🚀 Personal Portfolio 🚀
 
 Welcome to my portfolio page! This repository contains the source code for my personal portfolio website, where I showcase information about myself, the projects I've worked on, and my skills.
 
-## About Me
+## 👨‍💻 About Me
 
 Hello, I'm Daniel-Iosif Morohoschi, and I'm a passionate web developer. With 2 years of industry experience, I have worked with various technologies and frameworks to create innovative web solutions.
 
-## View Website
+## 🔗 View Website
 
 You can view my portfolio website here: https://danieliosifmorohoschi.com/
 
-## Screenshots
+## 📸 Screenshots
 
 ![Screenshot 1](docs/images/homepage.png)
 ![Screenshot 2](docs/images/aboutme.png)
@@ -21,7 +21,7 @@ You can view my portfolio website here: https://danieliosifmorohoschi.com/
 ![Screenshot 7](docs/images/experience-mobile.png)
 ![Screenshot 8](docs/images/projects-mobile.png)
 
-## Skills
+## 🔧 Skills
 
 - javascript
 - typescript
@@ -43,6 +43,6 @@ You can view my portfolio website here: https://danieliosifmorohoschi.com/
 - figma
 - firebase
 
-## Contact
+## 🌐 Contact
 
 If you'd like to get in touch with me or discuss potential collaborations, you can reach me at morohoschidanieliosif@gmail.com or using my website.
