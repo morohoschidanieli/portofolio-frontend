@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fdccdf2.css",
-    "main.js": "/static/js/main.357b12a1.js",
+    "main.js": "/static/js/main.6e9abfbf.js",
     "static/media/resume-mockup.png": "/static/media/resume-mockup.6701878618568ed75fb4.png",
     "static/media/brackjack-mockup.png": "/static/media/brackjack-mockup.854aa78b77243e87e212.png",
     "static/media/guessmynumber-mockup.png": "/static/media/guessmynumber-mockup.0b8737defe23e8454f34.png",
@@ -14,10 +14,10 @@
     "static/media/macos-directory.png": "/static/media/macos-directory.93380a94aac59d4e9b4f.png",
     "index.html": "/index.html",
     "main.5fdccdf2.css.map": "/static/css/main.5fdccdf2.css.map",
-    "main.357b12a1.js.map": "/static/js/main.357b12a1.js.map"
+    "main.6e9abfbf.js.map": "/static/js/main.6e9abfbf.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdccdf2.css",
-    "static/js/main.357b12a1.js"
+    "static/js/main.6e9abfbf.js"
   ]
 }
