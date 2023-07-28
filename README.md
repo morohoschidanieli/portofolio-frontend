@@ -12,13 +12,14 @@ You can view my portfolio website here: https://danieliosifmorohoschi.com/
 
 ## Screenshots
 
-![Screenshot 1](https://1drv.ms/i/s!AnuRNaZ_EyHny2rGINkJtkUUj7AO?e=wg1OCq)
-![Screenshot 2](https://1drv.ms/i/s!AnuRNaZ_EyHny2j2mDDNKLIRBAH5?e=42cGjM)
-![Screenshot 3](https://1drv.ms/i/s!AnuRNaZ_EyHny2bZncHVAu3bGsGU?e=6YRP5P)
-![Screenshot 4](https://1drv.ms/i/s!AnuRNaZ_EyHny2sZRtCXwe5ZmHYc?e=kWjU6c)
-![Screenshot 5](https://1drv.ms/i/s!AnuRNaZ_EyHny2mqjl9hzaB4mSNP?e=Go875o)
-![Screenshot 6](https://1drv.ms/i/s!AnuRNaZ_EyHny2XVz8HnyhIYhhFa?e=SjI05Q)
-![Screenshot 7](https://1drv.ms/i/s!AnuRNaZ_EyHny2fR3R_cQbmh4Eg0?e=5tLk97)
+![Screenshot 1](docs/images/homepage.png)
+![Screenshot 2](docs/images/aboutme.png)
+![Screenshot 3](docs/images/experience.png)
+![Screenshot 4](docs/images/projects.png)
+![Screenshot 5](docs/images/homepage-mobile.png)
+![Screenshot 6](docs/images/aboutme-mobile.png)
+![Screenshot 7](docs/images/experience-mobile.png)
+![Screenshot 8](docs/images/projects-mobile.png)
 
 ## Skills
 
