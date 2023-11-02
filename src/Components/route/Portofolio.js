@@ -8,6 +8,7 @@ import RandomNumberGenerator from "../../assets/images/projects/randomnumbergene
 import TicTacToeMockup from "../../assets/images/projects/tictactoe-mockup.png";
 import ToDoMockup from "../../assets/images/projects/todo-mockup.png";
 import LamaSocialMockup from "../../assets/images/projects/Lamasocial-mockup.png";
+import ColorAvatarMockup from "../../assets/images/projects/color-avatar-mockup.png";
 import HomeAutomationSystemMockup from "../../assets/images/projects/smart-home-automation-system-mockup.png";
 import PortofolioMockup from "../../assets/images/projects/portofolio-mockup.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -60,6 +61,12 @@ const LiveDemoLink = styled.a(
 
 const Portofolio = () => {
   const projects = [
+    {
+      title: "Color Avatar",
+      image: ColorAvatarMockup,
+      url: "https://morohoschidanieli.github.io/create-avatar/",
+      typeOfUrl: "Live Demo",
+    },
     {
       title: "Portofolio",
       image: PortofolioMockup,
