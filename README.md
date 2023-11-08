@@ -8,7 +8,7 @@ Hello, I'm Daniel-Iosif Morohoschi, and I'm a passionate web developer. With 2 y
 
 ## 🔗 View Website
 
-You can view my portfolio website here: https://danieliosifmorohoschi.com/
+You can view my portfolio website here: https://danieliosifmorohoschi.me/
 
 ## 📸 Screenshots
 
