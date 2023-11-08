@@ -11,6 +11,7 @@ import LamaSocialMockup from "../../assets/images/projects/Lamasocial-mockup.png
 import ColorAvatarMockup from "../../assets/images/projects/color-avatar-mockup.png";
 import HomeAutomationSystemMockup from "../../assets/images/projects/smart-home-automation-system-mockup.png";
 import PortofolioMockup from "../../assets/images/projects/portofolio-mockup.png";
+import DualIpInfoMockup from "../../assets/images/projects/dual-ip-info-mockup.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompass } from "@fortawesome/free-solid-svg-icons";
 
@@ -61,6 +62,12 @@ const LiveDemoLink = styled.a(
 
 const Portofolio = () => {
   const projects = [
+    {
+      title: "Dual IP Info Chrome Extension",
+      image: DualIpInfoMockup,
+      url: "https://github.com/morohoschidanieli/dual-ip-info",
+      typeOfUrl: "Chrome Store",
+    },
     {
       title: "Color Avatar",
       image: ColorAvatarMockup,
