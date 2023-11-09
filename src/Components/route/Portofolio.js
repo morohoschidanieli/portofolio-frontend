@@ -65,7 +65,7 @@ const Portofolio = () => {
     {
       title: "Dual IP Info Chrome Extension",
       image: DualIpInfoMockup,
-      url: "https://github.com/morohoschidanieli/dual-ip-info",
+      url: "https://chrome.google.com/webstore/detail/dual-ip-info/mkogjkljakhdcbajpejnkkmfhngbojhi?hl=ro&authuser=0",
       typeOfUrl: "Chrome Store",
     },
     {
