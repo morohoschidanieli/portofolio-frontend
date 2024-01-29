@@ -11,11 +11,21 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+
+      - name: Clear npm cache
+        run: npm cache clean -f
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Debug info
+        run: |
+          ls -l   # Afișează conținutul directorului pentru depanare
+          npm ls  # Afișează structura dependențelor pentru depanare
 
       - name: Build
         run: |
-          npm install
           npm run-script build
         env:
           REACT_APP_CONTACT_SERVER_LINK: ${{ secrets.REACT_APP_CONTACT_SERVER_LINK }}
