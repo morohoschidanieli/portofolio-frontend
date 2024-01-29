@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fdccdf2.css",
-    "main.js": "/static/js/main.229ffed1.js",
+    "main.js": "/static/js/main.676a5f23.js",
     "static/media/dual-ip-info-mockup.png": "/static/media/dual-ip-info-mockup.4cefe0741f6462b40b30.png",
     "static/media/color-avatar-mockup.png": "/static/media/color-avatar-mockup.c87c6d1fa3b7b9e8c094.png",
     "static/media/brackjack-mockup.png": "/static/media/brackjack-mockup.854aa78b77243e87e212.png",
@@ -17,10 +17,10 @@
     "static/media/macos-directory.png": "/static/media/macos-directory.93380a94aac59d4e9b4f.png",
     "index.html": "/index.html",
     "main.5fdccdf2.css.map": "/static/css/main.5fdccdf2.css.map",
-    "main.229ffed1.js.map": "/static/js/main.229ffed1.js.map"
+    "main.676a5f23.js.map": "/static/js/main.676a5f23.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdccdf2.css",
-    "static/js/main.229ffed1.js"
+    "static/js/main.676a5f23.js"
   ]
 }
