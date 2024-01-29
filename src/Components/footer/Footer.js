@@ -15,7 +15,7 @@ const CurrentYearContainer = styled.div`
 const Footer = () => {
   const [viewsCounter, setViewsCounter] = useState("");
   console.log(process.env.REACT_APP_VIEWS_SERVER_LINK);
-  console.log("test");
+
   useEffect(() => {
     const fetchViewsData = async () => {
       try {
