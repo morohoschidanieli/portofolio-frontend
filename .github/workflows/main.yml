@@ -21,8 +21,8 @@ jobs:
 
       - name: Debug info
         run: |
-          ls -l   # Afișează conținutul directorului pentru depanare
-          npm ls  # Afișează structura dependențelor pentru depanare
+          ls -l   
+          npm ls
 
       - name: Build
         run: |
