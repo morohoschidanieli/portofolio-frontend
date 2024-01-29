@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+
     env:
       REACT_APP_CONTACT_SERVER_LINK: ${{ vars.REACT_APP_CONTACT_SERVER_LINK }}
       REACT_APP_VIEWS_SERVER_LINK: ${{ vars.REACT_APP_VIEWS_SERVER_LINK }}
