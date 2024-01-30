@@ -132,7 +132,7 @@ const Home = () => {
   const aboutMeList = [
     { emoji: "☕", description: "fueled by coffee" },
     { emoji: "🌎", description: "based in RO, Cluj-Napoca" },
-    { emoji: "💼", description: "Frontend Developer at Endava" },
+    { emoji: "💼", description: "developer at Endava" },
     { emoji: "📧", description: "morohoschidanieliosif@gmail.com" },
   ];
   return (
@@ -145,7 +145,7 @@ const Home = () => {
           Hi, I'm <GradientName>Daniel</GradientName>
           <HandMoving>🤚</HandMoving>
         </H1>
-        <H2>I'm a Frontend Developer.</H2>
+        <H2>I'm a developer.</H2>
         <InfoList>
           {aboutMeList.map((aboutMeElement, index) => (
             <InfoListElement key={index}>
