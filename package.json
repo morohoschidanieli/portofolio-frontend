@@ -1,31 +1,20 @@
 {
   "name": "portofolio-frontend",
-  "version": "2.0.0",
-  "author": {
-    "name": "Daniel-Iosif Morohoschi",
-    "email": "mdi.contact.dev@gmail.com"
-  },
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.7"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "typescript": "5.9.2",
-    "@types/node": "20.14.8",
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7",
-    "@tailwindcss/postcss": "4.1.12",
-    "tailwindcss": "4.1.12",
-    "eslint": "9.33.0",
-    "eslint-config-next": "15.4.7",
-    "@eslint/eslintrc": "3.3.1"
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
   }
 }
