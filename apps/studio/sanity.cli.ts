@@ -1,9 +1,13 @@
 import {defineCliConfig} from 'sanity/cli'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineCliConfig({
   api: {
-    projectId: 'fg90p535',
-    dataset: 'production'
+    projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+    dataset: process.env.SANITY_STUDIO_DATASET,
+  },
+  vite: {
+    plugins: [tsconfigPaths()],
   },
   /**
    * Enable auto-updates for studios.

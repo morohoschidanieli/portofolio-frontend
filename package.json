@@ -1,20 +1,32 @@
 {
   "name": "portofolio-frontend",
+  "author": {
+    "name": "Daniel-Iosif Morohoschi",
+    "email": "mdi.contact.dev@gmail.com",
+    "url": "https://morohoschidanieliosif.me"
+  },
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build:studio": "turbo run build --filter=studio",
+    "build:portofolio": "turbo run build --filter=portofolio",
     "dev": "turbo run dev",
+    "dev:studio": "turbo run dev --filter=studio",
+    "dev:portofolio": "turbo run dev --filter=portofolio",
     "lint": "turbo run lint",
+    "lint:studio": "turbo run lint --filter=studio",
+    "lint:portofolio": "turbo run lint --filter=portofolio",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.6",
+    "@types/node": "22.18.1",
+    "prettier": "3.6.2",
+    "turbo": "2.5.6",
     "typescript": "5.9.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "packageManager": "npm@11.5.1",
   "workspaces": [

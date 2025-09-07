@@ -1,5 +1,5 @@
 {
-  "name": "mdi",
+  "name": "studio",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
@@ -9,24 +9,24 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "generate:types": "sanity schema extract sanity typegen generate"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^4.6.1",
-    "react": "^19.1",
-    "react-dom": "^19.1",
-    "sanity": "^4.6.1",
-    "styled-components": "^6.1.18"
+    "@sanity/vision": "4.6.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sanity": "4.6.1",
+    "styled-components": "6.1.19"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.1",
-    "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
+    "@sanity/eslint-config-studio": "5.0.2",
+    "@types/react": "19.1.0",
+    "eslint": "9.35.0",
+    "prettier": "3.6.2"
   },
   "prettier": {
     "semi": false,

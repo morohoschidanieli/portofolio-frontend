@@ -10,7 +10,12 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@/*": ["./@"],
+      "@structures": ["./structures"],
+      "@schemas": ["./schemaTypes/index.ts"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
