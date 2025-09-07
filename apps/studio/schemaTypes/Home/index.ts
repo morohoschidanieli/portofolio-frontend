@@ -9,21 +9,25 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'subTitle',
       title: 'Subtitle',
       type: 'text',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'profileImage',
       title: 'Profile image',
       type: 'image',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'summary',
       title: 'Summary',
       type: 'array',
+      validation: (Rule) => Rule.required(),
       of: [
         {
           type: 'object',
@@ -49,6 +53,7 @@ export default defineType({
       name: 'contact',
       title: 'Contact',
       type: 'array',
+      validation: (Rule) => Rule.required(),
       of: [
         {
           type: 'object',
@@ -60,11 +65,13 @@ export default defineType({
               title: 'Icon',
               type: 'reference',
               to: [{type: 'icons'}],
+              validation: (Rule) => Rule.required(),
             },
             {
               name: 'url',
               title: 'URL',
               type: 'string',
+              validation: (Rule) => Rule.required(),
             },
           ],
         },
